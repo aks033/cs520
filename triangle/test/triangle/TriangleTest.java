@@ -155,5 +155,32 @@ public class TriangleTest {
 			
 		}
 
+	@Test
+		public void test19()
+		{
+			Type actual = Triangle.classify(-1, 1, 1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+
+	@Test
+		public void test20()
+		{
+			Type actual = Triangle.classify(1, -1, 1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+
+	@Test
+		public void test21()
+		{
+			Type actual = Triangle.classify(1, 1, -1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+
 	}
 
