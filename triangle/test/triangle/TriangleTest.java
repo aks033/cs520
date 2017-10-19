@@ -260,6 +260,14 @@ public class TriangleTest {
 			assertEquals(actual, expected);
 			
 		}
+	@Test
+		public void test31()
+		{
+			Type actual = Triangle.classify(2, 2, 4);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
 
 	}
 
