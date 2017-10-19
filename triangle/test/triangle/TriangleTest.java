@@ -91,50 +91,77 @@ public class TriangleTest {
         assertEquals(actual, expected);
     }
    
-@Test
- public void test10()
-    {
-        Triangle.Type a;
-    }
+	@Test
+	 public void test10()
+		{
+			Triangle.Type a;
+		}
 
-@Test
-public void test11()
-    {
-        new Triangle();
-    }
+	@Test
+	public void test11()
+		{
+			new Triangle();
+		}
 
-@Test
-	public void test12()
-    {
-        Type actual = Triangle.classify(2, 2, 5);
-        Type expected = INVALID;
-        assertEquals(actual, expected);
-    }
+	@Test
+		public void test12()
+		{
+			Type actual = Triangle.classify(2, 2, 5);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+		}
 
-@Test
-	public void test13()
-    {
-        Type actual = Triangle.classify(2, 5, 2);
-        Type expected = INVALID;
-        assertEquals(actual, expected);
-    }		
+	@Test
+		public void test13()
+		{
+			Type actual = Triangle.classify(2, 5, 2);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+		}		
 
 
-@Test
-	public void test14()
-    {
-        Type actual = Triangle.classify(5, 2, 2);
-        Type expected = INVALID;
-        assertEquals(actual, expected);
-    }
-	
-@Test 
-	public void test15()
-	{
-	Type actual = Triangle.classify(0, 1, 1);
-        Type expected = INVALID;
-        assertEquals(actual, expected);	
+	@Test
+		public void test14()
+		{
+			Type actual = Triangle.classify(5, 2, 2);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+		}
+		
+	@Test 
+		public void test15()
+		{
+		Type actual = Triangle.classify(0, 1, 1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);	
+		}
+		
+	@Test
+		public void test16()
+		{
+			Type actual = Triangle.classify(0, 1, 1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+		
+	@Test
+		public void test17()
+		{
+			Type actual = Triangle.classify(1, 0, 1);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+		
+	@Test
+		public void test18()
+		{
+			Type actual = Triangle.classify(1, 1, 0);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+
 	}
-
-}
 
