@@ -181,6 +181,33 @@ public class TriangleTest {
 			assertEquals(actual, expected);
 			
 		}
+		
+	@Test
+		public void test22()
+		{
+			Type actual = Triangle.classify(10, 90, 10);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+		
+	@Test
+		public void test23()
+		{
+			Type actual = Triangle.classify(10, 10, 90);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
+		
+	@Test
+		public void test24()
+		{
+			Type actual = Triangle.classify(90, 10, 10);
+			Type expected = INVALID;
+			assertEquals(actual, expected);
+			
+		}
 
 	}
 
