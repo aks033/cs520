@@ -74,7 +74,6 @@ public class TriangleTest {
         Type expected = ISOSCELES;
         assertEquals(actual, expected);
     }
- 
 	
 	@Test
     public void test8()
@@ -92,17 +91,18 @@ public class TriangleTest {
         assertEquals(actual, expected);
     }
    
-	@Test
+@Test
  public void test10()
     {
         Triangle.Type a;
     }
 
-	@Test
+@Test
 public void test11()
     {
         new Triangle();
     }
+
 @Test
 	public void test12()
     {
@@ -127,4 +127,5 @@ public void test11()
         Type expected = INVALID;
         assertEquals(actual, expected);
     }	
+
 }
