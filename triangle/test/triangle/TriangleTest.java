@@ -107,7 +107,7 @@ public void test11()
 	public void test12()
     {
         Type actual = Triangle.classify(2, 2, 5);
-        Type expected = ISOSCELES;
+        Type expected = INVALID;
         assertEquals(actual, expected);
     }
 
@@ -115,7 +115,7 @@ public void test11()
 	public void test13()
     {
         Type actual = Triangle.classify(2, 5, 2);
-        Type expected = ISOSCELES;
+        Type expected = INVALID;
         assertEquals(actual, expected);
     }		
 
@@ -124,7 +124,7 @@ public void test11()
 	public void test14()
     {
         Type actual = Triangle.classify(5, 2, 2);
-        Type expected = ISOSCELES;
+        Type expected = INVALID;
         assertEquals(actual, expected);
     }	
 }
